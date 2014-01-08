@@ -67,8 +67,8 @@
             '<option data-additional-fieldset="additional-fieldset"'  + (field_operator == "starts_with" ? 'selected="selected"' : '') + ' value="starts_with">Starts with</option>' +
             '<option data-additional-fieldset="additional-fieldset"'  + (field_operator == "ends_with"   ? 'selected="selected"' : '') + ' value="ends_with">Ends with</option>' +
             '<option disabled="disabled">---------</option>' +
-            '<option ' + (field_operator == "_present"    ? 'selected="selected"' : '') + ' value="_present">Is present</option>' +
-            '<option ' + (field_operator == "_blank"      ? 'selected="selected"' : '') + ' value="_blank">Is blank</option>' +
+            '<option ' + (field_operator == "_not_null"    ? 'selected="selected"' : '') + ' value="_not_null">Is present</option>' +
+            '<option ' + (field_operator == "_null"      ? 'selected="selected"' : '') + ' value="_null">Is blank</option>' +
           '</select>'
           var additional_control = '<input class="additional-fieldset input-small" style="display:' + (field_operator == "_blank" || field_operator == "_present" ? 'none' : 'inline-block') + ';" type="text" name="' + value_name + '" value="' + field_value + '" /> ';
           break;
